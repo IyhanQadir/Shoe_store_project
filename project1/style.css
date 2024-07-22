@@ -1,0 +1,751 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    /* overflow-x: hidden; */
+}
+nav{
+    background-color: #171717;
+    color: white;
+    padding: 10px 20px;
+    height: 7rem;
+}
+.navTop{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+}
+.searchBar{
+    display: flex;
+    align-items: center;
+    background-color: lightgray;
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+.searchInput{
+    border: none;
+    background-color: transparent;
+}
+.limitedOffer{
+    font-size: 20px;
+    border-bottom: 3px solid greenyellow;
+    cursor: pointer;
+}
+.navBottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menuItem{
+    margin-right: 50px;
+    color: lightgray;
+    font-weight: 400;
+    margin-bottom: 0px;
+}
+.menuItem:hover{
+    cursor: pointer;
+}
+.slider{
+    background-image: url(https://images.pexels.com/photos/26571162/pexels-photo-26571162/free-photo-of-metal-oblique-building-wall.jpeg?auto=compress&cs=tinysrgb&w=800);
+    display: flex;
+    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%); */
+    overflow: hidden; 
+    height: 100vh;
+}
+.sliderWrapper{
+    display: flex;
+    width: 500vw;
+    transition: all 1s ease-in-out;
+    height: 100vh;
+}
+
+.slider img{
+    width: 50%;
+    z-index: 1;
+}
+.sliderBg{
+    width: 640px;
+    height: 640px;
+    border-radius: 50%;
+    background-color: orange;
+    position: absolute;
+}
+.sliderItem{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.sliderTitle{
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    font-size: 60px;
+    text-align: center;
+    z-index: 1;
+    
+}
+.sliderPrice{
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    font-size: 40px;
+    text-align: center;
+    z-index: 1;
+}
+.buyButton{
+    position: absolute;
+    top: 70%;
+    right: 9%;
+    font-size: 55px;
+    text-align: center;
+    z-index: 1;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid;
+    background-color: black;
+    color: white;
+}
+.buyButton:hover{
+    background-color: white;
+    color: black;
+    transition: .5s;
+}
+  
+.sliderItem:nth-child(1) .sliderBg{
+    background-color: orange;
+}
+.sliderItem:nth-child(2) .sliderBg{
+    background-color: limegreen;
+}
+.sliderItem:nth-child(3) .sliderBg{
+    background-color: pink;
+}
+.sliderItem:nth-child(4) .sliderBg{
+    background-color: lightskyblue;
+}
+.sliderItem:nth-child(1) .sliderPrice {
+    color: orange;
+  }
+  .sliderItem:nth-child(2) .sliderPrice {
+    color: limegreen;
+  }
+  .sliderItem:nth-child(3) .sliderPrice {
+    color: pink;
+  }
+  .sliderItem:nth-child(4) .sliderPrice {
+    color: lightskyblue;
+  }
+  .features {
+    position: absolute;
+    top: 130vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+  }
+  
+  .feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .feature:hover{
+    background-color: limegreen;
+    border-radius: 20px;
+    transition: 1s;
+  }
+  
+  .featureIcon {
+    width: 20px;
+    height: 20%;
+  }
+  
+  .featureTitle {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px;
+  }
+  
+  .featureDesc {
+    color: gray;
+    width: 50%;
+    height: 100px;
+  }
+  .product {
+    height: 100vh;
+    width: 100%;
+    background-color: gray;
+    position: absolute;
+    top: 200vh;
+  }
+  
+  
+  .productImg {
+    width: 100%;
+    transform: rotate(30deg);
+  }
+  
+  .productDetails {
+    position: absolute;
+    top: 10%;
+    right: 0;
+    width: 40%;
+    padding: 50px;
+  }
+  
+  .productTitle {
+    font-size: 75px;
+    font-weight: 900;
+  }
+  
+  .productDesc {
+    font-style: 24px;
+  }
+  
+  .colors,
+  .sizes {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .color {
+    width: 32px;
+    height: 32px;
+    border-radius: 5px;
+    background-color: white;
+    margin-right: 10px;
+    cursor: pointer;
+    border: 1px solid;
+  }
+  
+  .color:last-child {
+    background-color: black;
+  }
+  
+  .size {
+    padding: 5px 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  .productButton {
+    float: right;
+    margin-right: 40px;
+    margin-top: -100px;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  .productButton:hover {
+    background-color: white;
+    color: black;
+  }
+  .gallery{
+    position: absolute;
+    top: 330vh;
+    padding: 50px;
+    display: flex;
+  }
+  .galleryItem {
+    flex: 1;
+    padding-left:40px;
+  }
+  
+  .galleryImg {
+    width: 100%;
+  }
+  .newSeason {
+    display: flex;
+    position: absolute;
+    top: 400vh;
+    width: 98vw;
+  }
+  
+  .nsItem {
+    flex: 1;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .nsImg {
+    width: 100%;
+    height: 350px;
+  }
+  
+  .nsTitle {
+    font-size: 40px;
+  }
+  
+  .nsButton {
+    padding: 15px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  footer {
+    display: flex;
+    position: absolute;
+    top: 460vh;
+    gap: 200px;
+  }
+  
+  .footerLeft {
+    flex: 2;
+    display: flex;
+    justify-content: space-between;
+     padding: 100px;
+    /*position: relative;
+    left: 200px; */
+  }
+  
+  .fMenuTitle {
+    font-size: 16px;
+  }
+  
+  .fList {
+    padding: 0;
+    list-style: none;
+  }
+  
+  .fListItem {
+    margin-bottom: 10px;
+    color: gray;
+    cursor: pointer;
+  }
+  
+  .footerRight {
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* position: relative;
+    left: 300px; */
+  }
+  
+  .fInput {
+    padding: 5px;
+  }
+  
+  .fButton {
+    padding: 5px;
+    background-color: black;
+    color: white;
+  }
+  
+  .fIcons{
+    display: flex;
+  }
+  
+  .fIcon{
+    width: 20px;
+    height: 20px;
+    margin-right: 60px;
+    cursor: pointer;
+  }
+  
+  .copyright{
+    font-weight: 300;
+    font-size: 14px;
+  }
+  @media screen and (max-width:480px) {
+    nav{
+      padding: 5px;
+    }
+  
+    .search{
+      display: none;
+    }
+  
+    .navBottom{
+      flex-wrap: wrap;
+    }
+  
+    .menuItem{
+      margin: 10px;
+      font-weight: 300;
+      font-size: 20px;
+    }
+  
+    .slider{
+      clip-path: none;
+    }
+  
+    /* .sliderImg{
+      width: 350%;
+    } */
+  
+    .sliderBg{
+      width: 90%;
+      height: 70%;
+    }
+  
+    .sliderTitle{
+      display: none;
+    }
+  
+    .sliderPrice{
+      top: unset;
+      bottom: -50;
+      left: 0;
+      background-color: lightgrey;
+    }
+  
+    .buyButton{
+      right: 1;
+      top: 10;
+      width: 50%;
+    }
+  
+    .features{
+      flex-direction: column;
+    }
+  
+    .product{
+      clip-path: none ;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      top: 380vh;
+    }
+  
+    .productImg{
+      width: 80%;
+    }
+  
+    .productDetails{
+      width: 100%;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      top: 0;
+    }
+    .productButton{
+      position: relative;
+      right: 100px;
+    }
+  
+    .productTitle{
+      font-size: 50px;
+      margin: 0;
+    }
+  
+    .gallery{
+      display: none;
+    }
+  
+    .newSeason{
+      flex-direction: column;
+      width: 96vw;
+      top: 490vh;
+    }
+  
+    .nsItem:nth-child(2){
+      padding: 50px;
+    }
+  
+    footer{
+      flex-direction: column;
+      align-items: center;
+      top: 700vh;
+    }
+  
+    .footerLeft{
+      padding: 20px;
+      width: 90%;
+    }
+  
+    .footerRight{
+      margin-top: -100px;
+      padding-left: 55px;
+      width: 90%;
+      align-items: center;
+      background-color: whitesmoke;
+    }}
+
+    @media screen and (max-width:390px) {
+      nav{
+        padding: 5px;
+      }
+    
+      .search{
+        display: none;
+      }
+    
+      .navBottom{
+        flex-wrap: wrap;
+      }
+    
+      .menuItem{
+        margin: 10px;
+        font-weight: 300;
+        font-size: 20px;
+      }
+    
+      .slider{
+        clip-path: none;
+      }
+    
+      /* .sliderImg{
+        width: 350%;
+      } */
+    
+      .sliderBg{
+        width: 100%;
+        height: 50%;
+      }
+    
+      .sliderTitle{
+        display: none;
+      }
+    
+      .sliderPrice{
+        top: unset;
+        bottom: -50;
+        left: 0;
+        background-color: lightgrey;
+      }
+    
+      .buyButton{
+        right: 1;
+        top: 10;
+        width: 70%;
+      }
+    
+      .features{
+        flex-direction: column;
+      }
+    
+      .product{
+        clip-path: none ;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        top: 300vh;
+      }
+    
+      .productImg{
+        width: 80%;
+      }
+    
+      .productDetails{
+        width: 100%;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        top: 0;
+      }
+      .productButton{
+        position: relative;
+        right: 100px;
+      }
+    
+      .productTitle{
+        font-size: 50px;
+        margin: 0;
+      }
+    
+      .gallery{
+        display: none;
+      }
+    
+      .newSeason{
+        flex-direction: column;
+        width: 96vw;
+        top: 410vh;
+      }
+    
+      .nsItem:nth-child(2){
+        padding: 50px;
+      }
+    
+      footer{
+        flex-direction: column;
+        align-items: center;
+        top: 540vh;
+      }
+    
+      .footerLeft{
+        padding: 20px;
+        width: 90%;
+      }
+    
+      .footerRight{
+        display: none;
+        /* margin-top: -100px;
+        padding-left: 55px; */
+        /* left: 0;
+        width: 90%;
+        align-items: center;
+        background-color: whitesmoke; */
+      }}
+
+      @media screen and (max-width:460px) {
+        nav{
+          padding: 5px;
+        }
+      
+        .search{
+          display: none;
+        }
+      
+        .navBottom{
+          flex-wrap: wrap;
+        }
+      
+        .menuItem{
+          margin: 10px;
+          font-weight: 300;
+          font-size: 20px;
+        }
+      
+        .slider{
+          clip-path: none;
+        }
+      
+        /* .sliderImg{
+          width: 350%;
+        } */
+      
+        .sliderBg{
+          width: 100%;
+          height: 50%;
+        }
+      
+        .sliderTitle{
+          display: none;
+        }
+      
+        .sliderPrice{
+          top: unset;
+          bottom: -50;
+          left: 0;
+          background-color: lightgrey;
+        }
+      
+        .buyButton{
+          right: 1;
+          top: 10;
+          width: 70%;
+        }
+      
+        .features{
+          flex-direction: column;
+        }
+      
+        .product{
+          clip-path: none ;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          top: 300vh;
+        }
+      
+        .productImg{
+          width: 80%;
+        }
+      
+        .productDetails{
+          width: 100%;
+          padding: 0;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          position: relative;
+          top: 0;
+        }
+        .productButton{
+          position: relative;
+          right: 100px;
+        }
+      
+        .productTitle{
+          font-size: 50px;
+          margin: 0;
+        }
+      
+        .gallery{
+          display: none;
+        }
+      
+        .newSeason{
+          flex-direction: column;
+          width: 96vw;
+          top: 410vh;
+        }
+      
+        .nsItem:nth-child(2){
+          padding: 50px;
+        }
+      
+        footer{
+          flex-direction: column;
+          align-items: center;
+          top: 590vh;
+        }
+      
+        .footerLeft{
+          padding: 20px;
+          width: 90%;
+        }
+      
+        .footerRight{
+          display: none;
+          margin-top: 10px;
+          left: 0;
+          width: 90%;
+          align-items: center;
+          background-color: whitesmoke;
+        }}
+        
+        @media screen and (max-width:820px){
+          .slider{
+            background-image: url(https://images.pexels.com/photos/26571162/pexels-photo-26571162/free-photo-of-metal-oblique-building-wall.jpeg?auto=compress&cs=tinysrgb&w=800);
+          }
+          .features{
+            top: 120vh;
+          }
+          .product{
+            top: 170vh;
+            height: 70vh;
+          }
+          .gallery{
+            top: 250vh;
+          }
+          .newSeason{
+            top: 300vh;
+          }
+          footer{
+            top: 340vh;
+            gap: 20px;
+          }
+          .footerLeft{
+            gap: 20px;
+          }
+        }
